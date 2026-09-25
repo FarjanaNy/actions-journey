@@ -1,0 +1,8 @@
+name: ci run
+on: push
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+    - name: print greet message
+      run: echo "Hello"
