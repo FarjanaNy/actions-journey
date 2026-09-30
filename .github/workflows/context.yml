@@ -11,3 +11,4 @@ jobs:
         echo "Commit: ${{ github.sha }}"
         echo "Event: ${{ github.event_name }}"
         echo "Triggered by ${{ github.actor }}"
+        echo "Runner: ${{ runner.os }}"
