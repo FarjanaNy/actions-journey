@@ -9,10 +9,8 @@ jobs:
       LOG_LEVEL: info
     steps:
       - name: Default log level
-        run: echo "$APP_NAME uses log level $LOG
-_LEVEL"
+        run: echo "$(APP_NAME) uses log level $(LOG_LEVEL)"
       - name: Debug log level
         env:
           LOG_LEVEL: debug
-        run: echo "$APP_NAME uses log level $LOG
-_LEVEL"
+        run: echo "$(APP_NAME) uses log level $(LOG_LEVEL)"
