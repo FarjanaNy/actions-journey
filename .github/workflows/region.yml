@@ -1,0 +1,8 @@
+name: variable-check
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: var
+      run: echo "The variable is ${{var.DEPLOY_REGION}}"

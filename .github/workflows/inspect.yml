@@ -1,0 +1,12 @@
+name: inspect-runner
+on: push
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout repo
+      uses: actions/checkout@v4
+    - name: details
+      run: uname -a
+    - name: prints files
+      run: ls | wc -l
